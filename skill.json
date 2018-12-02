@@ -1,0 +1,42 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "summary": "Versuche die Rechenaufgaben möglichst schnell zu lösen.",
+          "examplePhrases": [
+            "Alexa, starte schnelles Einmaleins"
+          ],
+          "name": "Schnelles Einmaleins",
+          "description": "",
+          "keywords": [
+            "1x1",
+            "Rechnen"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-speedtimestable-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-speedtimestable-skill/icon512.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No special testing required.",
+      "category": "GAMES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "dist",
+          "uri": "arn:aws:lambda:eu-west-1:347839150037:function:alexa-speedtimestable-skill-production"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

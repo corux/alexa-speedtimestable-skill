@@ -1,0 +1,39 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "schnelles einmaleins",
+      "intents": [
+        {
+          "name": "AMAZON.HelpIntent"
+        },
+        {
+          "name": "AMAZON.CancelIntent"
+        },
+        {
+          "name": "AMAZON.StopIntent"
+        },
+        {
+          "name": "AMAZON.YesIntent"
+        },
+        {
+          "name": "AMAZON.NoIntent"
+        },
+        {
+          "name": "AnswerIntent",
+          "samples": [
+            "die Lösung ist {answer}",
+            "{answer}",
+            "keine Ahnung",
+            "ich weiss nicht"
+          ],
+          "slots": [
+            {
+              "name": "answer",
+              "type": "AMAZON.NUMBER"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
