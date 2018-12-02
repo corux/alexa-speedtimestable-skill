@@ -67,7 +67,7 @@ export class AnswerIntentHandler extends BaseIntentHandler {
           && this.sayAsSeconds(durationPerQuestion) !== this.sayAsSeconds(myBestDuration)) {
           const speechcon = this.getRandomEntry(["wow", "donnerwetter", "super"]);
           text += `<say-as interpret-as="interjection">${speechcon}</say-as>, das ist deine neue Bestzeit! `;
-        } else if (myDurationsPerQuestion.length > 3 && durationPerQuestion > myAverageDuration) {
+        } else if (myDurationsPerQuestion.length > 1 && durationPerQuestion > myAverageDuration) {
           const speechcon = this.getRandomEntry([
             "oh mann", "naja", "ich glaub mich laust der affe",
             "ich glaub mein schwein pfeift", "ach du liebe zeit",

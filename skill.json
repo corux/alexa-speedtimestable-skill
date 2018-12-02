@@ -8,7 +8,7 @@
             "Alexa, starte schnelles Einmaleins"
           ],
           "name": "Schnelles Einmaleins",
-          "description": "",
+          "description": "Beim kleinen Einmaleins müssen die Antworten wie aus der Pistole geschossen kommen!\n\nDieser Skill hilft dir dabei, deine Geschwindigkeit zu verbessern. Es werden pro Runde 8 Aufgaben gestellt. Am Ende jeder Runde erfährst du deine Durchschnittszeit pro Antwort.\n\nDein persönlicher Highscore wird gespeichert. Um deinen Highscore zurückzusetzen, deaktiviere den Skill.",
           "keywords": [
             "1x1",
             "Rechnen"
