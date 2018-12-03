@@ -35,7 +35,7 @@
       "allowsPurchases": false,
       "isExportCompliant": true,
       "containsAds": false,
-      "isChildDirected": false,
+      "isChildDirected": true,
       "usesPersonalInfo": false
     }
   }
