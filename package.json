@@ -29,7 +29,7 @@
     "ts-loader": "5.3.1",
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
-    "typescript": "3.2.1",
+    "typescript": "3.2.2",
     "underscore": "1.9.1",
     "webpack": "4.27.1",
     "webpack-command": "0.4.2"
