@@ -13,11 +13,19 @@ function getRandomNumber(): number {
 
 function createQuestions() {
   const questions: Array<{ first: number, second: number }> = [];
+  const limitNumbersToOnce = [1, 2, 10];
   while (questions.length < getNumberOfQuestions()) {
     const first = getRandomNumber();
     const second = getRandomNumber();
-    if (questions.filter((item) => Math.min(item.first, item.second) === Math.min(first, second)
-      && Math.max(item.first, item.second) === Math.max(first, second)).length === 0) {
+    const sameNumbersNotYetUsed = questions
+      .filter((item) => Math.min(item.first, item.second) === Math.min(first, second)
+        && Math.max(item.first, item.second) === Math.max(first, second))
+      .length === 0;
+    const limitedNumbersNotYetUsed = [].concat(...questions.map((item) => [item.first, item.second]))
+      .filter((item) => item === first || item === second)
+      .filter((item) => limitNumbersToOnce.indexOf(item) !== -1)
+      .length === 0;
+    if (sameNumbersNotYetUsed && limitedNumbersNotYetUsed) {
       questions.push({
         first,
         second,
@@ -63,7 +71,7 @@ function estimateSpeechOutputDuration(text: string): number {
   const transformed = text
     .replace(/<[^>]*>/g, "")
     .replace(/[\.\,\?]/g, "")
-    .replace(/([0-9]+)/g, (match, capture) =>  match.replace(capture, convertNumberToText(capture)));
+    .replace(/([0-9]+)/g, (match, capture) => match.replace(capture, convertNumberToText(capture)));
   const words = transformed.split(" ")
     .filter((item) => !!item.trim())
     .length;
