@@ -19,11 +19,11 @@
   },
   "devDependencies": {
     "@types/node": "10.14.1",
-    "ask-cli": "1.7.19",
+    "ask-cli": "1.7.20",
     "ask-sdk-core": "2.7.0",
     "ask-sdk-dynamodb-persistence-adapter": "2.7.0",
     "ask-sdk-model": "1.25.1",
-    "aws-sdk": "2.596.0",
+    "aws-sdk": "2.597.0",
     "class.extend": "0.9.2",
     "raw-loader": "4.0.0",
     "ts-loader": "6.2.1",
