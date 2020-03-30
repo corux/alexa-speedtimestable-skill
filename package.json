@@ -22,8 +22,8 @@
     "ask-cli": "1.7.23",
     "ask-sdk-core": "2.7.0",
     "ask-sdk-dynamodb-persistence-adapter": "2.7.0",
-    "ask-sdk-model": "1.27.0",
-    "aws-sdk": "2.643.0",
+    "ask-sdk-model": "1.28.0",
+    "aws-sdk": "2.648.0",
     "class.extend": "0.9.2",
     "raw-loader": "4.0.0",
     "ts-loader": "6.2.2",
@@ -31,7 +31,7 @@
     "tslint": "5.20.1",
     "typescript": "3.8.3",
     "underscore": "1.9.2",
-    "webpack": "4.42.0",
+    "webpack": "4.42.1",
     "webpack-command": "0.5.0"
   }
 }
